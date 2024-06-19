@@ -2,6 +2,10 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './Home.css';
+import img1 from "../img/img 1.png"
+import img2 from "../img/cohete.png"
+import ellipse1 from '../img/Ellipse 1.png';
+import ellipse2 from '../img/Ellipse 2.png'
 
 function Home() {
   return (
@@ -9,7 +13,7 @@ function Home() {
       <Row>
         <Col>
           <div className="image-container">
-          <img  src={process.env.PUBLIC_URL +'/img/img 1.png'}
+          <img  src={img1}
             alt="" 
             className="home-image" />
             <div className="overlay-content">
@@ -25,7 +29,7 @@ function Home() {
         <Row className="justify-content-center">
           <Col md={4}>
             <div className="section text-center">
-              <img  src={process.env.PUBLIC_URL +'/img/cohete.png'}
+              <img  src={img2}
               alt="Rocket" 
               className="rocket-section-image" />
               <h2>Nacionalidad</h2>
@@ -34,7 +38,7 @@ function Home() {
           </Col>
           <Col md={4}>
             <div className="section text-center">
-            <img  src={process.env.PUBLIC_URL +'/img/cohete.png'}
+            <img  src={img2}
               alt="Rocket" 
               className="rocket-section-image" />
               <h2>Visa Temporal</h2>
@@ -43,7 +47,7 @@ function Home() {
           </Col>
           <Col md={4}>
             <div className="section text-center">
-            <img  src={process.env.PUBLIC_URL +'/img/cohete.png'}
+            <img  src={img2}
               alt="Rocket" 
               className="rocket-section-image" />
               <h2>Visa Definitiva</h2>
@@ -54,13 +58,13 @@ function Home() {
       </div>
       {/* Imagen en el lado derecho a la mitad de la web */}
       <div className="right-image-container">
-        <img  src={process.env.PUBLIC_URL +'/img/Ellipse 1.png'}
+        <img  src={ellipse1}
         alt="" 
         className="right-side-image" />
       </div>
       {/* Imagen en la parte inferior izquierda */}
       <div className="bottom-left-image-container">
-      <img  src={process.env.PUBLIC_URL +'/img/Ellipse 2.png'}
+      <img  src={ellipse2}
         alt="" 
         className="bottom-left-image" />
       </div>

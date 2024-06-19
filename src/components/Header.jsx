@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import './Header.css'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import img1 from "../img/logo-mundo-migrante (1).png"
 
 
 const Header = () => {
@@ -11,7 +12,7 @@ const Header = () => {
       <Navbar expand="lg" className="navbar-custom">
         <Navbar.Brand href="#home">
           <img
-            src={process.env.PUBLIC_URL +'/img/logo-mundo-migrante (1).png'}
+            src={img1}
             alt="Mundo Migrante Chile"
             className="d-inline-block align-top"
             
