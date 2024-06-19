@@ -1,0 +1,123 @@
+
+/* Estilos personalizados para el Navbar */
+/* src/components/Header.css */
+.navbar-custom {
+  background-color: #FF93F4 !important; /* Color de fondo rosa */
+  height: 50px; /* Establece el alto del Navbar */
+  padding: 0 20px; /* Ajusta el padding lateral */
+  display: flex;
+  align-items: center;
+}
+
+.navbar-custom .navbar-brand img {
+  width: 40px; /* Ajusta el tamaño del logo */
+  height: 40px;
+}
+
+.nav-link {
+  color: white !important; /* Color del texto de los enlaces */
+  padding: 0 10px; /* Ajusta el padding de los enlaces */
+}
+
+h6 {
+  font-size:x-small;
+  text-align: center; /* Esto centra el texto horizontalmente */
+  margin: 0 auto; /* Esto centra el elemento si tiene un ancho definido */
+  padding: 5px 5px;
+}
+
+.navbar-custom .ml-auto {
+  margin-left: auto;
+}
+
+/*linea verde del inicio*/
+.custom-link {
+  color: white !important;
+  text-decoration: none;
+  position: relative;
+}
+
+.custom-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; 
+  width: 100%;
+  height: 3px; 
+  background-color: #D4FF00;
+}
+
+.custom-link:hover::after {
+  transform: scaleX(1);
+}
+
+/*finaliza linea verde*/
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .custom-link {
+    display: inline-block;
+    padding-right: 55px; /* Ajusta este valor según la longitud de la línea */
+  }
+
+  .custom-link::after {
+    left: auto;
+    right: 7px; /* Mueve la línea al final del texto */
+    bottom: 38%; /* Centra verticalmente */
+    width: 40px; /* Ajusta la longitud de la línea según sea necesario */
+    height: 3px; /* Línea horizontal */
+  }
+}
+
+.seccion {
+  color: #ffffff !important;
+}
+/*.navbar-custom .nav-link:hover {
+  color: #D4FF00;
+}*/
+
+.navbar-custom .navbar-brand {
+  color: white !important;
+}
+
+/* Estilos para el botón de toggle */
+.navbar-toggler {
+  border: none; /* Elimina el borde del botón de toggle */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-custom {
+  background-color: #FF93F4; /* Color de fondo del Navbar */
+  height: 80px; /* Altura inicial del Navbar */
+  padding: 10px 20px; /* Padding interno del Navbar */
+  transition: height 0.3s ease; /* Transición suave para la altura */
+
+  /* Ajustes para dispositivos móviles y responsive */
+  @media (max-width: 768px) {
+    height: 220px; /* Altura mayor para dispositivos móviles */
+    padding: 20px 40px; /* Padding ajustado para dispositivos móviles */
+  }
+
+}
+/* Estilos para el botón de toggle */
+.navbar-toggler {
+  border: none; /* Elimina el borde del botón de toggle */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Estado activo (click) */
+.navbar-toggler-icon:active {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23D4FF00' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Estado hover */
+.navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23D4FF00' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
